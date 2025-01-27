@@ -32,5 +32,5 @@ const totalPrice = basket.reduce((total, item) => {
   return total + (price * item.qty)  
 }, 0)
 
-console.log(totalPrice) 
+console.log(totalPrice)
 

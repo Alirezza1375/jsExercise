@@ -18,9 +18,27 @@ const changes = {
   values: [3, 1],
 };
 
-const result = [
+/*const result = [
   {id: 1, values: [3]},
   {id: 2, values: [3]},
   {id: 3, values: [1]},
   {id: 4, values: [1, 3]}
-]
+] */ 
+
+
+
+const companyGroupIdsByNames = companyGroups => {
+  return companyGroups.split(", ").map(companyGroup => {
+    return groups.find(group => group.name === companyGroup).id;
+  })
+  
+}
+
+
+
+const result = changes.ids.map(id => {
+  const company = comapnies.find(comp => comp.id === id);
+  const companyGroupIds = companyGroupIdsByNames(company.groups)
+  
+  
+})
