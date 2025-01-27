@@ -2,7 +2,7 @@
     if (i % 2 !== 0) {
         console.log(i)
     }
-} */ 
+} */
 
 /*for (let i = 0; i <= 100; i++) {
     if (i % 2 === 0) {
@@ -19,7 +19,7 @@
     };
 };
 
-evenNum(10); */ 
+evenNum(10); */
 
 
 /*function givenNumber (x, n) {
@@ -45,7 +45,7 @@ let numbers = [1,2,3,6,36,23,21,34];
 evenNumberFromArray(numbers); */
 
 
-/*function sumNum (arr) {
+/*function sumNum (arr, isEven) {
     const evenNum = arr.filter(number => number % 2 === 0);
     const sumEven = evenNum.reduce((accumulator, currentValue) => {
         return accumulator + currentValue;
@@ -68,7 +68,7 @@ console.log(result); */
 
 let numbers = [1,2,3,6,36,23,21,34];
 const result = sumOddNum(numbers);
-console.log(result); */ 
+console.log(result); */
 
 
 
@@ -80,8 +80,7 @@ console.log(result); */
 
 let numbers = [1,2,3,6,25,36,63,81,34];
 const result = absVal(numbers);
-console.log(result); */ 
-
+console.log(result); */
 
 
 /*let numbers = [1,2,3,6,36,23,21,34];
@@ -90,7 +89,7 @@ let maxIdx = 0;
 for (let i = 1; i < numbers.length; i++) {
     if (numbers[i] > numbers[maxIdx]) {
         maxIdx = i;
-        
+
     }
 }
 console.log(maxIdx); */
@@ -102,7 +101,7 @@ for (let i = 1; i < numbers.length; i++) {
     if (numbers[i] < numbers[0]) {
         minIdx = i;
     }
-} 
+}
 
 console.log(minIdx); */
 
@@ -114,7 +113,7 @@ let sumOddNum = numbers.filter(num => num % 2 !== 0).reduce((acc, val) => acc + 
 let sumEvenNum = numbers.filter(num => num % 2 === 0).reduce((acc, val) => acc + val);
 
 console.log(sumEvenNum);
-console.log(sumOddNum); */ 
+console.log(sumOddNum); */
 
 
 /*let numbers = [1,2,3,6,36,23,21,34];
@@ -137,10 +136,10 @@ let reversedArr = []
 
 for (let i = numbers.length - 1; i >= 0; i--) {
     reversedArr.push(numbers[i]);
-    
+
 };
 
-console.log(reversedArr); */ 
+console.log(reversedArr); */
 
 
 /*let numbers = [1,1,1,1, 2,3,3,4,1,2,3,4];
