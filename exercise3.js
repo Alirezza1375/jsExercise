@@ -1,4 +1,4 @@
-const comapnies = [
+const companies = [
   {id: 1, name: 'Amir', groups: "Vendor, Manufacturer"},
   {id: 2, name: 'Goodi', groups: "Vendor"},
   {id: 3, name: 'Tilda', groups: "Manufacturer, Prospect"},
