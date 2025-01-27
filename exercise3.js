@@ -37,8 +37,18 @@ const companyGroupIdsByNames = companyGroups => {
 
 
 const result = changes.ids.map(id => {
-  const company = comapnies.find(comp => comp.id === id);
-  const companyGroupIds = companyGroupIdsByNames(company.groups)
-  
+  const company = companies.find(comp => comp.id === id); 
+  const companyGroupIds = companyGroupIdsByNames(company.groups) // [1,2] 
+  const newChanges = changes.values.filter(value => {
+    return !companyGroupIds.includes(value) 
+  })
+
+
+  return {
+    id,
+    values: newChanges
+  }
   
 })
+
+console.log(result);
